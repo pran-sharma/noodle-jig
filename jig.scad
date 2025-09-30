@@ -1,11 +1,11 @@
-$fn = 32;
+$fn = 256;
 
 // Parameters
 diameter = 55;          // Hole diameter
 overhang_angle = 45;    // Between 0 and 90 degrees, non-inclusive
-slot_width = 2;         // Must be less than depth
-depth = 6;              // Must be greater than slot width
-thickness = 3;
+slot_width = 3;         // Must be less than depth
+depth = 25;             // Must be greater than slot width
+thickness = 5;
 
 // Rectangular base dimensions
 base_length = diameter + 2 * thickness;
@@ -70,4 +70,5 @@ difference() {
                 triangular_prism(diameter/2, overhang_angle, depth+2);
 
     }
+
 }
